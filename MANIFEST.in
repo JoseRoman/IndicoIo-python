@@ -1,4 +1,0 @@
-include README.md
-include tests/*.*
-recursive-include *.py
-recursive-include IndicoIo/*.*
