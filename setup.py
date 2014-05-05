@@ -12,5 +12,5 @@ setup(
 	url = "https://github.com/IndicoDataSolutions/IndicoIo-python",
 	author = "Alec Radford, Slater Victoroff",
 	author_email = "Alec Radford <alec@indicodatasolutions.com>, Slater Victoroff <slater@indicodatasolutions.com>",
-        py_modules = ['IndicoIo', 'IndicoIo.text', 'IndicoIo.images']
+        py_modules = ['IndicoIo.text.sentiment', 'IndicoIo.images.fer', 'IndicoIo.images.facial_features']
 )
