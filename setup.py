@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
 	name = "IndicoIo",
-	version = '0.2.0',
+	version = '0.2.1',
 	packages = ["IndicoIo",],
 	license = "MIT License (See LICENSE)",
 	long_description = open("README.md").read(),
