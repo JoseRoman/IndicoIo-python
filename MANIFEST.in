@@ -1,4 +1,3 @@
-include *.txt
 include README.md
-recursive-include examples *.txt *.py
-prune examples/sample?/build
+include tests/*.*
+recursive-include IndicoIo/*.*
