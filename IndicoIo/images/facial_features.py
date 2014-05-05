@@ -3,15 +3,10 @@ import json
 import requests
 import numpy as np
 
-TEST_GOOD_FACE = np.linspace(0,50,48*48).reshape(48,48).tolist()
-TEST_BAD_FACE = np.linspace(0,50,56*56).reshape(56,56).tolist()
-
-base_url = lambda c: "http://localhost/api/features/%s" % c
+base_url = lambda c: "http://indico.io/api/features/%s" % c
 headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
 
 def facial(face):
     data_dict = json.dumps({"datums": face})
     response = requests.post(base_url("facial"), data=data_dict, headers=headers)
     return response.content
-
-print facial(TEST_BAD_FACE)
