@@ -5,14 +5,11 @@ except ImportError:
 
 setup(
 	name = "IndicoIo",
-	version = '0.2.5',
+	version = '0.2.6',
 	packages = [
             "IndicoIo",
-            "IndicoIo.text.sentiment",
-            "IndicoIo.images.fer",
-            "IndicoIo.images.facial_features",
             "IndicoIo.text",
-            "IndicoIo.images"
+            "IndicoIo.images",
         ],
 	license = "MIT License (See LICENSE)",
 	long_description = open("README").read(),
