@@ -1,0 +1,1 @@
+v0.2.8, Tue May 13 -- Added Description, Authors file, changelog. Cleaned up import paths and modified corresponding examples and tests
