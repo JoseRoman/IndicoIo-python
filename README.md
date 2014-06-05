@@ -27,14 +27,14 @@ Examples
 
 >>> from IndicoIo import political, spam, posneg, fer, facial_features
 
->>> political("Guns don't kill people, people kill people")
-{u'Libertarian': 1.000094905588269, u'Liberal': 1.000194776694221, u'Green': 1.0000989185747784, u'Conservative': 1.000114308739228}
+>>> political("Guns don't kill people. People kill people.")
+{u'Libertarian': 0.22934946808893228, u'Liberal': 0.2025395008382684, u'Green': 0.0, u'Conservative': 1.0}
 
->>> spam("Buy a new car!!")
-{u'Ham': 1.0001470818000544, u'Spam': 1.0003137966593707}
+>>> spam("Free car!")
+{u'Ham': 0.0, u'Spam': 1.0}
 
 >>> posneg("Would not stay in this hotel ever again.")
-{u'Positive': 1.0002370406887562, u'Negative': 1.0002938352112363}
+{u'Positive': 0.0, u'Negative': 1.0}
 
 >>> test_face = np.linspace(0,50,48*48).reshape(48,48).tolist()
 

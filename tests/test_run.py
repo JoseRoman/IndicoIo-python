@@ -43,7 +43,7 @@ class FullAPIRun(unittest.TestCase):
         fer_set = set(['Angry', 'Sad', 'Neutral', 'Surprise', 'Fear', 'Happy'])
         test_face = np.linspace(0,50,56*56).reshape(56,56).tolist()
         response = fer(test_face)
-        
+
         self.assertTrue(isinstance(response, dict))
         self.assertEqual(fer_set, set(response.keys()))
 
@@ -53,14 +53,6 @@ class FullAPIRun(unittest.TestCase):
 
         self.assertTrue(isinstance(response, list))
         self.assertEqual(len(response), 48)
-
-    def test_full_facial_features(self):
-        features_set = set(['feature_vector', 'warnings'])
-        test_face = np.linspace(0,50,56*56).reshape(56,56).tolist()
-        response = facial_features(test_face, True)
-        
-        self.assertEqual(set(response.keys()), features_set)
-        self.assertEqual(response['warnings'], 'Using a 48x48 array will produce the best results')
 
 
 if __name__ == "__main__":

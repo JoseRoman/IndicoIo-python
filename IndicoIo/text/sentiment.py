@@ -1,8 +1,10 @@
 import requests
 import json
-from IndicoIo import JSON_HEADERS
 
-base_url = lambda c: "http://indico.io/api/sentiment/%s/classify" % c
+from IndicoIo import JSON_HEADERS
+from IndicoIo.utils import normalize
+
+base_url = lambda c: "http://indico.io/api/%s" % c
 
 def political(test_text):
     data_dict = json.dumps({'text': test_text})

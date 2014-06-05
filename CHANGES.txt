@@ -1,1 +1,2 @@
 v0.2.8, Tue May 13 -- Added Description, Authors file, changelog. Cleaned up import paths and modified corresponding examples and tests
+v0.2.9, Mon Jun 2 -- API now supports normalization, updating documentation to reflect this.
