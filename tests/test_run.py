@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 
-from IndicoIo import political, spam, posneg, fer, facial_features
+from IndicoIo import political, spam, sentiment, fer, facial_features
 
 
 class FullAPIRun(unittest.TestCase):
@@ -24,9 +24,9 @@ class FullAPIRun(unittest.TestCase):
         self.assertEqual(spam_set, set(response.keys()))
 
     def test_posneg(self):
-        posneg_set = set(['Positive', 'Negative'])
+        posneg_set = set(['Sentiment'])
         test_string = "Worst song ever."
-        response = posneg(test_string)
+        response = sentiment(test_string)
 
         self.assertTrue(isinstance(response, dict))
         self.assertEqual(posneg_set, set(response.keys()))

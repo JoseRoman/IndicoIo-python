@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
 	name = "IndicoIo",
-	version = '0.2.10',
+	version = '0.2.11',
 	packages = [
             "IndicoIo",
             "IndicoIo.text",

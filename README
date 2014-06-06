@@ -25,7 +25,7 @@ Examples
 ```
 >>> import numpy as np
 
->>> from IndicoIo import political, spam, posneg, fer, facial_features
+>>> from IndicoIo import political, spam, sentiment, fer, facial_features
 
 >>> political("Guns don't kill people. People kill people.")
 {u'Libertarian': 0.22934946808893228, u'Liberal': 0.2025395008382684, u'Green': 0.0, u'Conservative': 1.0}
@@ -33,8 +33,11 @@ Examples
 >>> spam("Free car!")
 {u'Ham': 0.0, u'Spam': 1.0}
 
->>> posneg("Would not stay in this hotel ever again.")
-{u'Positive': 0.0, u'Negative': 1.0}
+>>> sentiment('Worst movie ever.')
+{u'Sentiment': 0.07062467665597527}
+
+>>> sentiment('Really enjoyed the movie.')
+{u'Sentiment': 0.8105182526856075}
 
 >>> test_face = np.linspace(0,50,48*48).reshape(48,48).tolist()
 
