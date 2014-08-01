@@ -5,3 +5,5 @@ v0.3.0, Mon Jul 21 -- Switched api over to new high-volume version, using api.in
 v0.3.1, Mon Jul 21 -- Added __version__ to module
 v0.3.2, Tue Jul 22 -- Removed spam detection due to instability
 v0.3.3, Fri Aug 1 -- Added language detection api
+v0.4.0, Fri Aug 1 -- Changed api import to lowercase, added language example
+v0.4.1, Fri Aug 1 -- Updated __version__ variable to be accurate

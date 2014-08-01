@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 
-from IndicoIo import political, sentiment, fer, facial_features, language
+from indicoio import political, sentiment, fer, facial_features, language
 
 
 class FullAPIRun(unittest.TestCase):

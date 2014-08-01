@@ -1,5 +1,5 @@
 """
-Setup for indicoio apis
+Setup for indico apis
 """
 try:
     from setuptools import setup
@@ -8,21 +8,21 @@ except ImportError:
 
 setup(
     name="IndicoIo",
-    version='0.3.3',
+    version='0.4.1',
     packages=[
-        "IndicoIo",
-        "IndicoIo.text",
-        "IndicoIo.images",
-        "IndicoIo.utils",
+        "indicoio",
+        "indicoio.text",
+        "indicoio.images",
+        "indicoio.utils",
         "tests",
     ],
     description="""
-        A Python Wrapper for IndicoIo.
+        A Python Wrapper for indico.
         Use pre-built state of the art machine learning algorithms with a single line of code.
     """,
     license="MIT License (See LICENSE)",
     long_description=open("README").read(),
-    url="https://github.com/IndicoDataSolutions/IndicoIo-python",
+    url="https://github.com/IndicoDataSolutions/indicoio-python",
     author="Alec Radford, Slater Victoroff, Aidan McLaughlin",
     author_email="""
         Alec Radford <alec@indicodatasolutions.com>,

@@ -3,7 +3,7 @@ import json
 import requests
 import numpy as np
 
-from IndicoIo import JSON_HEADERS
+from indicoio import JSON_HEADERS
 
 base_url = lambda c: "http://api.indico.io/%s" % c
 

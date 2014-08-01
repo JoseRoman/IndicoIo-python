@@ -1,8 +1,8 @@
 import requests
 import json
 
-from IndicoIo import JSON_HEADERS
-from IndicoIo.utils import normalize
+from indicoio import JSON_HEADERS
+from indicoio.utils import normalize
 
 base_url = lambda c: "http://api.indico.io/%s" % c
 

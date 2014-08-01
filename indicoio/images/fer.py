@@ -2,7 +2,7 @@ import json
 
 import requests
 import numpy as np
-from IndicoIo import JSON_HEADERS
+from indicoio import JSON_HEADERS
 
 base_url = "http://api.indico.io/fer"
 
