@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 
-from IndicoIo import political, spam, sentiment, fer, facial_features
+from IndicoIo import political, sentiment, fer, facial_features, language
 
 
 class FullAPIRun(unittest.TestCase):
@@ -14,14 +14,6 @@ class FullAPIRun(unittest.TestCase):
 
         self.assertTrue(isinstance(response, dict))
         self.assertEqual(political_set, set(response.keys()))
-
-    def test_spam(self):
-        spam_set = set(['Spam', 'Ham'])
-        test_string = "Buy a new car!!"
-        response = spam(test_string)
-
-        self.assertTrue(isinstance(response, dict))
-        self.assertEqual(spam_set, set(response.keys()))
 
     def test_posneg(self):
         posneg_set = set(['Sentiment'])
@@ -53,6 +45,46 @@ class FullAPIRun(unittest.TestCase):
 
         self.assertTrue(isinstance(response, list))
         self.assertEqual(len(response), 48)
+
+    def test_language(self):
+        language_set = set([
+            'English',
+            'Spanish',
+            'Tagalog',
+            'Esperanto',
+            'French',
+            'Chinese',
+            'French',
+            'Bulgarian',
+            'Latin',
+            'Slovak',
+            'Hebrew',
+            'Russian',
+            'German',
+            'Japanese',
+            'Korean',
+            'Portuguese',
+            'Italian',
+            'Polish',
+            'Turkish',
+            'Dutch',
+            'Arabic',
+            'Persian (Farsi)',
+            'Czech',
+            'Swedish',
+            'Indonesian',
+            'Vietnamese',
+            'Romanian',
+            'Greek',
+            'Danish',
+            'Hungarian',
+            'Thai',
+            'Finnish',
+            'Norwegian',
+            'Lithuanian'
+        ])
+        language_dict = language('clearly an english sentence')
+        self.assertEqual(language_set, set(language_dict.keys()))
 
 
 if __name__ == "__main__":

@@ -1,3 +1,7 @@
 v0.2.8, Tue May 13 -- Added Description, Authors file, changelog. Cleaned up import paths and modified corresponding examples and tests
 v0.2.10, Mon Jun 2 -- API now supports normalization, updating documentation to reflect this.
 v0.2.11, Fri Jun 6 -- Switched sentiment api to more general version with much higher quality. updated docs to reflect this. Also changed unintuitive posneg to more intuitive Sentiment. Kept old posneg for backward compatibility.
+v0.3.0, Mon Jul 21 -- Switched api over to new high-volume version, using api.indico.io instead
+v0.3.1, Mon Jul 21 -- Added __version__ to module
+v0.3.2, Tue Jul 22 -- Removed spam detection due to instability
+v0.3.3, Fri Aug 1 -- Added language detection api

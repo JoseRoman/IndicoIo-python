@@ -4,7 +4,7 @@ import requests
 import numpy as np
 from IndicoIo import JSON_HEADERS
 
-base_url = "http://indico.io/api/fer"
+base_url = "http://api.indico.io/fer"
 
 def fer(face):
     data_dict = json.dumps({"face": face})

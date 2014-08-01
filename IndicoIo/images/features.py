@@ -5,7 +5,7 @@ import numpy as np
 
 from IndicoIo import JSON_HEADERS
 
-base_url = lambda c: "http://indico.io/api/%s" % c
+base_url = lambda c: "http://api.indico.io/%s" % c
 
 def facial_features(face):
     data_dict = json.dumps({"face": face})
