@@ -28,7 +28,7 @@ Examples
 >>> from indicoio import political, sentiment, fer, facial_features, language
 
 >>> political("Guns don't kill people. People kill people.")
-{u'Libertarian': 0.22934946808893228, u'Liberal': 0.2025395008382684, u'Green': 0.0, u'Conservative': 1.0}
+{u'Libertarian': 0.47740164630834825, u'Green': 0.08454409540443657, u'Liberal': 0.16617097211030055, u'Conservative': 0.2718832861769146}
 
 >>> sentiment('Worst movie ever.')
 {u'Sentiment': 0.07062467665597527}
